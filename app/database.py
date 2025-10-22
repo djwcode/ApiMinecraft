@@ -15,12 +15,10 @@ class InMemoryDatabase:
         self._init_demo_data()
     
     def _init_demo_data(self):
-        from app.auth import get_password_hash
-        
         demo_player = {
             "uuid": "550e8400-e29b-41d4-a716-446655440000",
             "username": "admin",
-            "password": get_password_hash("admin123"),
+            "password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYzS4HpQe/u",
             "role": "warrior",
             "inventory": {
                 "sword": 1,
